@@ -1,4 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
 .hero {
   background-image: url('../Images/CowMain.jpg');
-  height: 100vi;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  height: 100vh;
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 51% 100%, 48% 100%, 0 60%);
+}
+.hero h1,
+h2 {
+  font-size: 100px;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 60px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  word-spacing: 15px;
+  letter-spacing: 10px;
+}
+.article,
+#CowType {
+  width: 85%;
+  margin: 60px auto;
+  padding: 60px;
+  background: linear-gradient(rgb(234, 106, 128), blue);
+}
+.article h2,
+#CowType h2 {
+  text-align: center;
+  font-size: 48px;
+  border-bottom: 2px solid black;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.article p {
+  font-size: 22px;
+  clip-path: polygon(0 0, 100% 1%, 100% 50%, 54% 100%, 51% 100%, 0% 50%);
+  line-height: 2em;
+}
+.article p .imp {
+  background-color: yellow;
+  font-size: 2rem;
+}
+.cowImage {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.cowImage div {
+  min-width: 300px;
+}
+.cowImage img {
+  width: 100%;
 }
